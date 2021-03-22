@@ -9,4 +9,4 @@ var e=document.querySelector(".mission"),t=e.querySelector(".mission__phone"),i=
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./_style.scss"),require("./blocks/get-in-touch/__form/validate"),require("./blocks//cookies/cookies"),require("./blocks/mission/mission");
 },{"./_style.scss":"Z3WS","./blocks/get-in-touch/__form/validate":"A0C7","./blocks//cookies/cookies":"JIyq","./blocks/mission/mission":"CVpM"}]},{},["Focm"], null)
-//# sourceMappingURL=src.51c2cf7e.js.map
+//# sourceMappingURL=src.7c88ae16.js.map
