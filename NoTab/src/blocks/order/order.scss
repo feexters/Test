@@ -1,0 +1,115 @@
+.order {
+    width: 100%;
+    padding: 20% 0 25% 0;
+    background: url('./images/order/order-background.png') no-repeat;
+    background-color: colors('primary');
+    background-size: 100%;
+    
+    &__info {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+        align-items: flex-end;
+        z-index: 2;
+    }
+
+    &__article {
+        width: 30%;
+        margin-bottom: 5%;
+    }
+
+    &__download {
+        width: 110%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+
+        &-google-play {
+            margin-left: 10px;
+        }
+    }
+
+    &__images {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    &__phone {
+        max-width: 300px;
+    }
+
+    &__phone-code {
+        width: 80%;
+    }
+
+    &__phone-finish {
+        width: 80%;
+        position: relative;
+        top: 200px;
+        margin-left: 20px;
+    }
+
+}
+@media(max-width: $medium-width) {
+    .order {
+        background: url('./images/order/dj@2x.png') no-repeat;
+        background-size: 100%;
+        padding-top: 50%;
+
+        &__article {
+            width: 80%;
+            margin-bottom: 5%;
+        }
+
+        &__info {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__images {
+            background: url('./images/order/cocktail@2x.png') no-repeat;
+            background-size: 100%;
+            padding-top: 40%;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__phone {
+            display: flex;
+            margin-top: 5rem;
+        }
+    
+        &__phone-code {
+            width: 90%;
+            margin: 0 auto;
+        }
+    
+        &__phone-finish {
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+            top: 0;
+        }
+
+        &__download {
+            width: 60%;
+            margin: 5% auto;
+
+            &-items {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            &-google-play {
+                margin-left: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+/* GET COLOR */
+@function colors($key: 'primary') {
+    @return map-get($colors_value, $key)
+};
+
+$colors_value: (
+    'primary': black,
+    'secondary': white,
+);
+

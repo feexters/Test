@@ -1,0 +1,40 @@
+.contact {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+
+    &__section {
+        width: 35%;
+        margin-top: 5rem;
+        border: 1px solid rgba($color: colors('secondary'), $alpha: .5);
+        border-radius: 20px;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__text {
+        font: bold 3rem $font-noto;
+        color: colors('secondary');
+    }
+
+    &__ref {
+        margin-top: 4rem;
+        font: 400 2.4rem $font-noto;
+        color: colors('secondary');
+        cursor: pointer;
+    }
+}
+
+@media (max-width: $medium_width) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+
+        &__section {
+            width: 60%;
+        }
+    }
+}

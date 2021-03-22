@@ -1,0 +1,79 @@
+@import './__form/_form';
+
+.get-in-touch {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__title, &__text {
+        max-width: 700px;
+        text-align: center;
+        margin: 5%;
+        z-index: 2; 
+    }
+
+    &__figure {
+        width: 70%;
+        top: -55%;
+        left: 0;
+        z-index: -1; 
+    }
+
+    &__article {
+        position: relative;
+        margin-bottom: 5%;
+        z-index: 2;
+    }
+
+    &__button {
+        width: 30%;
+        font: bold 2.4rem $font-monts;
+        color: colors('secondary');
+        background-color: colors('primary');
+        border: 1px solid rgba($color: colors('secondary'), $alpha: .5);
+        padding: 2rem 3rem;
+        margin-top: 5rem;
+        border-radius: 1rem;
+    }
+
+    &__download {
+        padding-top: 10%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+
+        &__icon {
+            max-height: 100%;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        &__text {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+@media(max-width: $medium-width) {
+    .get-in-touch__download {
+        width: 100%;
+    }
+}
+
+@media(max-width: 435px) {
+    .get-in-touch__download {
+
+        &__icon {
+            display: block;
+            width: 150px;
+            margin-top: 2rem;
+        }
+
+        &__text {
+            font-size: 2.4rem;
+        }
+    }
+}

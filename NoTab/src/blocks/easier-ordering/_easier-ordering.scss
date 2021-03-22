@@ -1,0 +1,148 @@
+.easier-ordering {
+    width: 100%;
+    position: relative;
+
+    &__container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__figure {
+        width: 40%;
+        top: 0;
+        right: 0;
+    }
+    
+    &__article {
+        width: 45%;
+        align-self: flex-end;
+        padding-bottom: 5rem;
+    }
+
+    &__longscroll {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        
+        &-image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 80%;
+        }
+
+        &-info {
+            width: 60%;
+            height: 70%;
+            position: absolute;
+            color: colors('secondary');
+            font: 500 2.2rem $font-roboto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        &-text {
+            padding: 3%;
+            position: relative;
+            background-color: colors('primary');
+            border: 1px solid rgba($color: colors('secondary'), $alpha: .5);
+            border-radius: 15px;
+
+            /* Specific styles for each of block */
+
+            &:nth-child(1) {
+                max-width: 220px;
+                left: 55%;
+            }
+
+            &:nth-child(2) {
+                max-width: 220px;
+                top: -1rem;
+                left: -8rem;
+            }
+
+            &:nth-child(3) {
+                max-width: 150px;
+                top: 12%;
+                left: 77%;
+            }
+
+            &:nth-child(4) {
+                top: -7%;
+                left: 17%;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 950px) {
+
+    .easier-ordering__longscroll-text:nth-child(2) {
+        left: -12rem;
+    }
+
+}
+
+@media(max-width: $medium-width) {
+
+    .easier-ordering{
+        overflow: hidden;
+        padding-bottom: 7%;
+
+        &__figure {
+            width: 100%;
+        }
+
+        &__article {
+            width: 90%;
+            align-self: center;
+            padding-top: 5rem;
+            padding-bottom: 15rem;
+        }
+
+        &__longscroll{
+
+            &-image{
+                width: 90%;
+            }
+
+            &-text{
+                border-radius: 10px;
+
+                &:nth-child(1) {
+                    max-width: 190px;
+                    left: -10%;
+                    top: -32%;
+                }
+    
+                &:nth-child(2) {
+                    max-width: 190px;
+                    // width: 60%;
+                    left: 40%;
+                    top: -38%;
+                }
+    
+                &:nth-child(3) {
+                    left: 55%;
+                    top: 50%;
+                }
+    
+                &:nth-child(4) {
+                    max-width: auto;
+                    left: -17%;
+                    top: 0%;
+                }
+            }
+        }
+    }
+}

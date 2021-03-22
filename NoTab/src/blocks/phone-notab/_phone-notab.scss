@@ -1,0 +1,27 @@
+.phone-notab {
+    width: 100%;
+    padding: 24% 0;
+
+
+    background: url('./images/phone-notab/notab-light-background@2x.png') no-repeat;
+    background-color: colors('primary');
+    background-size: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 78%;
+    }
+}
+
+@media(max-width: $medium-width) {
+    .phone-notab {
+        display: none;
+    }
+}

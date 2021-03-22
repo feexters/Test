@@ -1,0 +1,25 @@
+@import './page/page';
+
+/* Support blocks*/
+@import './underline/underline';
+@import './article/article';
+@import './container/container';
+@import './download/download';
+@import './figure/figure';
+
+/* Main blocks */
+@import './header/header';
+@import './scanner/scanner';
+@import './contact/contact';
+@import './mission/mission';
+@import './track/track';
+@import './order/order';
+@import './qr-code/qr-code';
+@import './easier-ordering/easier-ordering';
+@import './phone-notab/phone-notab';
+@import './get-in-touch/get-in-touch';
+@import './footer/footer';
+@import './cookies/cookies';
+
+/* Form error */
+@import './input_error/input_error';

@@ -1,0 +1,19 @@
+.track {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 15% 0;
+    overflow: hidden;
+
+
+    &__img {
+        width: 100%;
+    }
+}
+
+@media(max-width: $medium_width) {
+    .track {
+        display: flex;
+        flex-direction: column;
+    }
+}

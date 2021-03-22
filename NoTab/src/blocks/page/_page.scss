@@ -1,0 +1,29 @@
+/* Styles for body */
+.page {
+    background-color: colors('primary');
+    /* Center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    &__vector {
+        top: 0;
+        right: 0;
+    }
+
+    &__figure-footer {
+        width: 80%;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__figure-bottom {
+        bottom: 2%;
+        right: 0;
+    }
+
+}
+
+

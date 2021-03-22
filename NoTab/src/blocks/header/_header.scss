@@ -1,0 +1,139 @@
+.header {
+    width: 100%;
+    overflow: hidden;
+    
+    &__top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    &__ellipse {
+        left: -10%;
+    }
+
+    &__logo {
+        margin-right: 12%;
+    }
+
+    &__login {
+        font: 400 1.8rem $font_noto;
+        color: colors('secondary');
+        cursor: pointer;
+    }
+
+    &__login-text {
+        color: colors('secondary');
+    }
+
+    &__login-icon {
+        margin-right: 2px;
+    }
+
+    &__main {
+        height: 70vh;
+        position: relative;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 60%  40%;
+        grid-template-rows: 75%;
+    }
+
+    &__article {
+
+        &-title {
+            font-size: 5.8rem;
+        }
+
+        &-paragraph {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        &-paragraph::before {
+            content: '';
+            width: 100px;
+            display: block;
+            height: 140px;
+            margin-left: 32px;
+            border-left: 4px solid colors('secondary') ;
+            transform: rotate(30deg);
+        }
+    }
+
+    &__phone {
+        width: 100%;
+        min-width: 360px;
+        position: relative;
+        left: 0;
+        display: block;
+        z-index: 3;
+    }
+
+    &__download {
+        display: grid;
+        grid-template-columns: 60% 40%;
+
+        &-text {
+            font: bold 3.5rem $font_monts;
+            color: colors('secondary');
+        }
+
+        &-icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        &-icons > {
+            max-width: 164px;
+        }
+    }
+
+}
+
+@media (max-width: $medium_width) {
+    .header {
+        width: 100%;
+        
+        &__top {
+            justify-content: space-between;
+        }
+    
+        &__logo {
+            margin-right: 0;
+        }
+    
+        &__login-icon {
+            display: none;
+        }
+
+        &__login-text {
+            margin-right: 2rem;
+        }
+
+        &__phone {
+            left: -30%;
+        }
+
+        &__main {
+            grid-template-columns: 70%  30%;
+        }
+
+        &__article {
+            width: 100%;
+
+            &-paragraph::before {
+                display: none;
+            }
+
+            &-text {
+                width: 70%;
+            }
+        }
+    }
+}

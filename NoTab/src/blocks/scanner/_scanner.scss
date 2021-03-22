@@ -1,0 +1,57 @@
+.barmen-background {
+    width: 100vw;
+    height: auto;
+    
+}
+
+.scanner {
+    width: 100%;
+    padding-top: 35%;
+    background: url('./images/scanner/barmen.png') no-repeat;
+    background-color: colors('primary');
+    background-size: 100%;
+
+    &__info {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+        column-gap: 10px;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+
+    &__phone {
+        display: block;
+        margin: 0 auto;
+        max-width: 335px;
+        width: 90%;
+    }
+
+    &__article {
+        margin-bottom: 10%;
+    }
+
+}
+
+@media (max-width: $medium-width) {
+    .scanner {
+        &__info {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__article {
+            order: 1;
+        }
+
+        &__phone {
+            order: 2;
+            max-width: 335px;
+            margin-top: 3rem;
+            width: 70%;
+        }
+    }
+}
